@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Print a multiplication table
+# example_01_table.sh
+# A simple shell script to print multiplication table
+#
 # Author: Avik Deb
 # Date: 13/02/2022
 # Revision: 1.0
