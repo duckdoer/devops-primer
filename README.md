@@ -1,1 +1,3 @@
-This is the learning hub. as of now files can be checked-in directly to the main branch. Later, branching model will be applied.
+
+Files under development are to be checked in development branch.
+Once reviewed, changes can be merged to main branch via Pull Request.
