@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# copy_student_file.sh
+# Script to copy student files in the named directories
+#
+# Author: Avik Deb
+# Date: 13/02/2022
+
+echo "[INFO] Running program: $0 "
+echo "[INIT] Copying sample file to student directories."
+cp sample.sh $HOME/localworks/1001/sample_1001.sh; chmod +x $HOME/localworks/1001/sample_1001.sh
+cp sample.sh $HOME/localworks/1002/sample_1002.sh; chmod +x $HOME/localworks/1002/sample_1002.sh
+cp sample.sh $HOME/localworks/1003/sample_1003.sh; chmod +x $HOME/localworks/1003/sample_1003.sh
+cp sample.sh $HOME/localworks/1004/sample_1004.sh; chmod +x $HOME/localworks/1004/sample_1004.sh
+echo "[SUCCESS] File copy completed."
