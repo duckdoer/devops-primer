@@ -16,7 +16,7 @@ fi
 # Create a file
 echo "Creating the file send_me_a_leaf.txt ..."
 echo "Send me a leaf, but from a bush
-That grows at least one half hour
+That grows at least one-half hour
 Away from your house, then
 You must go and will be strong, and I
 Thank you for the pretty leaf." > send_me_a_leaf.txt
