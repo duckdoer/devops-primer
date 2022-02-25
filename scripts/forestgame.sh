@@ -15,7 +15,6 @@ echo -e " ******************************\n"
 echo -e "Enter your name to continue:"
 read name
 
-start=''
 # Welcome the user
 echo -e "Welcome $name!"
 
@@ -42,18 +41,18 @@ if [ -f forestgame1.txt ] ; then
         done < forestgame1.txt
 
         # Actual logic of the game
-        echo -e "\nType N to continue Northbound or S to continue Southbound. (N|S): \c"
+        echo -e "Type N to continue Northbound or S to continue Southbound. (N|S): \c"
         read roadselected
-        if [ $roadselected = "N" ] || [ $roadselected = "n" ] [ $roadselected = "S" ] || [ $roadselected = "s" ] ; then
+        if [ $roadselected = "N" ] || [ $roadselected = "n" ] || [ $roadselected = "S" ] || [ $roadselected = "s" ] ; then
                 # Next level of checking
                 if [ $roadselected = "N" ] || [ $roadselected = "n" ] ; then
-                        echo -e "Continue towards North ...\n"
+                        echo -e "\nContinue towards North ...\n"
                         # Load North Story
                         sleep 1
                         echo -e "Walking in scortching heat ... \c"
                         sleep 2
                         echo -e "It's a desert, your water is finished. You are dying out of thurst ... \c"
-                        sleep 3
+                        sleep 2
                         echo -e "dying :-( ... \n"
                         sleep 2
                         echo -e "You died of thurst in an unknown desert.\n"
@@ -64,8 +63,41 @@ if [ -f forestgame1.txt ] ; then
                         exit
 
                 else
-                        echo "Continue towards South."
+                        echo -e "\nContinue towards South.\n"
                         # Load South Story
+                        sleep 1
+                        echo -e "You walked into a forest ... \c"
+                        sleep 2
+                        echo -e "You came across a haunted house. There are two doors."
+                        echo -e "Do you open the left door or the right door?"
+                        echo -e "Type L to open left door or R to open the righ door. (L|R): \c"
+                        read doorselected
+                        if [ $doorselected = "L" ] || [ $doorselected = "R" ] || [ $doorselected = "l" ] || [ $doorselected = "r" ] ; then
+                            if [ $doorselected = "L" ] || [ $doorselected = "l" ] ; then 
+                                sleep 2
+                                echo -e "\nA venomous snake bites you. You die!"
+                                echo -e "------------------------------------------"
+                                echo -e "R.I.P $name!"
+                                echo -e "Died on: $(date)."
+                                echo -e "------------------------------------------\n"
+                                exit
+                            else
+                                sleep 2
+                                echo -e "\nA tiger attacks you. You die!"
+                                echo -e "------------------------------------------"
+                                echo -e "R.I.P $name!"
+                                echo -e "Died on: $(date)."
+                                echo -e "------------------------------------------\n"
+                                exit
+                            fi
+                        else
+                                sleep 2
+                                echo -e "\nBravo!"
+                                echo -e "You have survived and Won the game!"
+                                echo -e "See you in the next class!"
+                                echo -e "\nBye!"
+                                exit
+                        fi
                 fi
         else
                 echo "Invalid direction. Better Luck Next Time!"
