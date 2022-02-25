@@ -6,6 +6,22 @@
 # Author: Avik Deb
 # Date: 24/02/2022
 
+echo -e "\n"
+
+echo -e "             ,@@@@@@@,                    "
+echo -e "       ,,,.   ,@@@@@@/@@,  .oo8888o.      "
+echo -e "    ,&%%&%&&%,@@@@@/@@@@@@,8888\88/8o     "
+echo -e "   ,%&\%&&%&&%,@@@\@@@/@@@88\88888/88'    "
+echo -e "   %&&%&%&/%&&%@@\@@/ /@@@88888\88888'    "
+echo -e "   %&&%/ %&%%&&@@\ V /@@' \`88\8 \`/88'   "
+echo -e "   \`&%\ \` /%&'    |.|        \ '|8'     "
+echo -e "       |o|        | |         | |         "
+echo -e "       |.|        | |         | |         "
+echo -e " \\/ ._\//_/__/  ,\_//__\\/.  \_//__/_    "
+
+echo -e "\n"
+echo -e "\n"
+
 echo -e " ******************************"
 echo -e " *   Forest Game              *"
 echo -e " *   Version 1.0              *"
@@ -49,7 +65,7 @@ if [ -f forestgame1.txt ] ; then
                         echo -e "\nContinue towards North ...\n"
                         # Load North Story
                         sleep 1
-                        echo -e "Walking in scortching heat ... \c"
+                        echo -e "Walking in scorching heat ... \c"
                         sleep 2
                         echo -e "It's a desert, your water is finished. You are dying out of thurst ... \c"
                         sleep 2
