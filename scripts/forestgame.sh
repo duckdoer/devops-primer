@@ -120,7 +120,7 @@ if [ -f forestgame1.txt ] ; then
                 exit
         fi
 else
-        echo -e "\n[ERROR] Initialization failed. Unable to fine the story file."
+        echo -e "\n[ERROR] Initialization failed. Unable to find the story file."
         echo -e "Aborting program. Please contact the developer to fix this issue."
         echo -e "Bye!"
 fi
